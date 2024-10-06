@@ -1,0 +1,57 @@
+---
+layout: post
+title: 'Symmetry'
+date: 2024-04-30 22:32:26 +0100
+categories: jekyll update
+---
+
+It's hard to overestimate the role symmetry plays in physics. It's also hard to overestimate the
+lack of originality that lies in writing a blog post about symmetry. But here we are and like every
+other physics student that has wandered off into machine learning I will keep my physics idols from
+turning in their graves by mentioning symmetry in my work here and there. Telling everyone how important it
+also is for a neural neutwork to respect symmetry (until someone with more compute comes along to show that
+it can do without; but lets not tell anyone about this (bitter lesson) [http://www.incompleteideas.net/IncIdeas/BitterLesson.html])
+
+Is symmetry general enough a method to not hinder a model from learning?
+How can we stop building in our theories of mind?
+
+Now, what do we mean by symmetry? When I hear the word symmetry, I either imagine the face of a (almost objectively)
+good looking person or a butterfly. They have in common that, if we were to draw a line along their longitudinal axis exactly in the middle
+of the transversal axis (say at $x=0$), it does not matter whether we move left ($x < 0$) or right ($x > 0$) from the axis - it looks the same.
+That is, if we imagine a tiny ant with rather bad short term memory being positioned exactly at this line that starts to walk off into
+some direction that is not completely parallel to the long axis ($x \neq 0$) after a while (this "while" depending on the short term memory
+of the ant), the ant could not tell whether it has walked off left or right. Surely, it can tell whether it walked downwards or upwards as, generally,
+the face above our nose does look different than our face below. So from the perspective of the ant,
+it makes no difference whether it walks to the left or the right. Its surrounding will be the same.
+Well, this is not exactly true for the bespoke reason of foreheads not being mouths. Its surrounding
+will look the same up to a flip of what is left or right. With that I mean, if it knew, where it walked off
+by knowing that, say, the chin, is below its starting location, it also could know into which horizontal direction it walked off.
+If at some point, the ant realizes that the chin is "more" to the right of itself, than it knows, that it has walked off to the right.
+Vice versa for walking off left.
+
+This symmetry has a name ($Z_2$ I am guessing, but I cannot remember for sure). Now immagine the ant not walking on a face or butterfly
+but on a completely round ball. Now, the ant has no way of telling into which direction it had wandered off. What is more,
+it does not even matter where it starts to wander off. In fact, by lack of an _external_ labeling of all the points on the ball
+it would not even have a way of telling where it was to begin with. One could remedy this by _embedding_ the ball into a surrounding space, where
+every point is labeled (which we could call a coordinate system), but mind that modern differential geometry is not very fond of embedding
+manifolds into higher dimensional spaces. Indeed, they seem to make a big deal of not having to embed anything into anything but reminding you
+that they could if they wanted to (Whitney).
+
+That being said, return to balls. Physicists and mathematicians love balls, but they seem to like their surface even more. This surface
+has its own special mathematical name, $\mathbb{S}^2$. The $2$ stands for it being two dimensional, since it would just be a (two dimensional)
+plane once we unroll it. Now, if we get rid of the ball and only consider its surface which we can characterize as all points that have the same
+distance from its center (namely the ball's radius) and shift this center into the origin (all zeros) of the coordinate system, because, heck, we
+could not care less about an _external_ coordinate system, we can write
+$$ \mathbb{S}^2 \equiv \{ (x, y, z) \in \mathbb{R} | \mathsqrt{x^2 + y^2 + z^2} = R \} $$
+as we like to use capital letters for constants.
+
+The sphere is a prime example of symmetry. And you might have guessed it, it is rotational symmetry we are speaking about. Turn a ball into any direction you like,
+it will still look the same. In fact, you can rotate it into any direction you like, by any **amount** you like, and it will still look the same.
+This encapsulates a far deeper topic of infinitesimal symmetries. On the other hand, rotating a square only a tiny amount will result in a different looking
+picture. The square does only have discrete rotational symmetries. That is you can only turn it around multiples of 90° ($\pi/2$ as smart people say) for it still
+looking the same. Note, that you could also do nothing to the square and it will look the same. Not very profound, but indeed we like our good old _identity_ mapping.
+You could also do nothing, then rotate it by a multiple of 90°, and it will also look like you have done nothing. This is not because, rotating a square by 90° and then
+doing nothing are inverse to another but more because they are practically the same ("practically the same" normal people say, "isomorphic" mathematicians say).
+Speaking of inverses, you could also do nothing and then rotate the square into the opposite direction you did previously. Still, allthesame.
+Funny that inverses are somehow practically the same as their inverses.
+We now have everything together to study the underlying structure of symmetries: Groups.

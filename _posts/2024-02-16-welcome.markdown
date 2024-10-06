@@ -1,0 +1,11 @@
+---
+layout: post
+title: 'Welcome'
+date: 2024-02-16 22:32:26 +0100
+categories: jekyll update
+---
+
+Welcome. I've build this site to publish notes that are directed to myself.
+Surely, one could have done this without all the possible (yet unprobable) attention of the internet
+but (1) I wanted to learn how to build static sites and (2) the awareness that somebody
+could read this, should serve as enough skin in the game to sharpen the formulation of my thoughts.
