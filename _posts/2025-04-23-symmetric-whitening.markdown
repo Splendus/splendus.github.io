@@ -75,7 +75,7 @@ $$\frac{1}{N-1} \sum_{i}^{N} (X_{ij} - \mu_j)^2 = \frac{1}{N-1} \sum_{i}^{N} X^2
 Then, by *standardization* $$X_{\mathrm{s},ij} := \frac{X_{ij} - \mu_j}{\sigma_j}$$, we center all
 features around the same point with unit variance which means  
 
-$$\mu_{s,j} = 0,\ \sigma_{s,j} = 1 \quad \text{for} \quad j=1,\dots, d.$$
+$$\mu_{\mathrm{s},j} = 0,\ \sigma_{\mathrm{s},j} = 1 \quad \text{for} \quad j=1,\dots, d.$$
 
 Taking a look at our apple data transformed like so
 
