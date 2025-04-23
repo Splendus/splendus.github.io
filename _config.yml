@@ -18,14 +18,14 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: DeepSite
-email: deepsite@tutamail.com
+title: 
+email: therealsplendus@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Machine Learning, Physics and more. Feel free to reach me at 
-  deepsite@tutamail.com.
-domain: deepsite.github.io
+  therealsplendus@gmail.com.
+domain: splendus.github.io
 baseurl: '' # the subpath of your site, e.g. /blog
-url: https://deepsite.github.io # the base hostname & protocol for your site
+url: https://splendus.github.io # the base hostname & protocol for your site
 permalink: date
 # twitter_username: jekyllrb
 # github_username:  jekyll
